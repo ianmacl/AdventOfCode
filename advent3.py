@@ -1,5 +1,3 @@
-import re
-
 with open("advent3.txt", "r") as fhandle:
     lines = [x.strip() for x in fhandle.readlines()]
 
@@ -21,7 +19,6 @@ for (x, y) in slopes:
     numTrees = 0
 
     while currentY < len(lines):
-        print 'loop'
         xCoord = currentX % len(lines[0])
         if lines[currentY][xCoord] is '#':
             numTrees += 1
